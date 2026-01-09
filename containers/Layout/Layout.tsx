@@ -1,0 +1,8 @@
+export const Layout = ({ children }: { children: React.ReactNode }) => {
+  return (
+    <div className="container">
+      <h1>Layout</h1>
+      {children}
+    </div>
+  );
+};
