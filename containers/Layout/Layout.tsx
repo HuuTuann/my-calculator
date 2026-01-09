@@ -1,8 +1,13 @@
-export const Layout = ({ children }: { children: React.ReactNode }) => {
+"use client";
+
+import { SidebarComponent } from "@/components/ui";
+import { Header, SideBar } from "./components";
+
+export const Layout = () => {
   return (
-    <div className="container">
-      <h1>Layout</h1>
-      {children}
-    </div>
+    <SidebarComponent.Provider>
+      <SideBar />
+      <Header />
+    </SidebarComponent.Provider>
   );
 };
